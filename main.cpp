@@ -242,8 +242,8 @@ OPERADORE COMPOSTO
         cout << "--O VALOR IMPRESSO DE I NESTA LINHA E: " << i << endl;
     }
 
-        cout << endl << "===============================================================" << endl;
-    cout << "================CALCULAR A TABUADA DO NUM=====================" << endl;
+    cout << endl << "===============================================================" << endl;
+    cout << "=============CALCULAR A TABUADA DO NUM COM FOR=================" << endl;
     cout << "===============================================================" << endl << endl;
 
     cout << "DIGITE UM VALOR PARA GERAR A TABUADA: " << endl;
@@ -254,6 +254,51 @@ OPERADORE COMPOSTO
         cout << n << " x "<< i << " = "<< i * n << endl;
     }
 
+    cout << endl << "===============================================================" << endl;
+    cout << "============CALCULAR A TABUADA DO NUM com WHILE================" << endl;
+    cout << "===============================================================" << endl << endl;
+    /**
+    NESTE EXERCICIO SERA PEGADO UM NUMERO DIGITADO PELO USUARIO E ENTAO ADICIONADO A UMA VARIAVEL NO SISTEMA
+    COM O NUMERO ADICIONADO O SISTEMA SERA ORIENTADO A GERAR A ABUADA USANDO O LACO DE REPETICAO COM WHILE
+    **/
+
+    cout << "DIGITE UM NUMERO PARA GERAR A TABUADA: ";
+    int tabu01;
+    cin >> tabu01;
+    cout << endl << endl;
+    int contador = 1;
+    while (contador < 10){
+        cout << tabu01 << " x " << contador << " = " << tabu01*contador<< endl;
+        contador ++;
+    }
+
+
+    cout << endl << "===============================================================" << endl;
+    cout << "============INSERINDO USUÁRIOS COM DO WHILE================" << endl;
+    cout << "===============================================================" << endl << endl;
+    /**
+    NESTE EXERCICIOS SERA FEITO UM CONTADOR VALORES ECONTANDO ELES COM O DO WHILE ENQUANTO A RESPOSTA DO
+    USUARIO FOR SIM ELE CONTINUA PERGUNTANDO NUMEROS;
+    **/
+
+    int numero01, somanum = 0;
+    char resposta;
+    char verdment;
+    verdment = 's';
+
+    do {
+        cout << "DIGITE UM NUMERO: ";
+        cin >> numero01;
+        cout << endl << endl;
+        cout << "O NUMERO DIGITADO FOI " << numero01 << endl;
+        somanum += numero01;
+        cout << "A SOMA DOS NUMEROS DIGITADOS FOI: " << somanum << endl;
+        cout << "DESEJA CONTINUAR [S/N]: ";
+
+        cin >> resposta;
+        cout << "VOE DIGITOU " << resposta<< endl;
+
+    } while (verdment == resposta);
 
 
     return 0;
