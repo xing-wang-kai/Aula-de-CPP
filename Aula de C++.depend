@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1641692328 source:k:\programação\c++\aula de c++\main.cpp
+	<iostream>
+	<stdlib.h>
+	<iomanip>
+	<math.h>
+
