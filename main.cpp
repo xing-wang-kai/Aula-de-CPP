@@ -274,7 +274,7 @@ OPERADORE COMPOSTO
 
 
     cout << endl << "===============================================================" << endl;
-    cout << "============INSERINDO USUÁRIOS COM DO WHILE================" << endl;
+    cout << "============CALCULANDO NUMERO INSERIDOS DO WHILE===============" << endl;
     cout << "===============================================================" << endl << endl;
     /**
     NESTE EXERCICIOS SERA FEITO UM CONTADOR VALORES ECONTANDO ELES COM O DO WHILE ENQUANTO A RESPOSTA DO
@@ -283,8 +283,6 @@ OPERADORE COMPOSTO
 
     int numero01, somanum = 0;
     char resposta;
-    char verdment;
-    verdment = 's';
 
     do {
         cout << "DIGITE UM NUMERO: ";
@@ -294,11 +292,10 @@ OPERADORE COMPOSTO
         somanum += numero01;
         cout << "A SOMA DOS NUMEROS DIGITADOS FOI: " << somanum << endl;
         cout << "DESEJA CONTINUAR [S/N]: ";
-
         cin >> resposta;
         cout << "VOE DIGITOU " << resposta<< endl;
 
-    } while (verdment == resposta);
+    } while (resposta = 's');
 
 
     return 0;
