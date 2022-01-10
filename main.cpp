@@ -266,8 +266,9 @@ OPERADORE COMPOSTO
     int tabu01;
     cin >> tabu01;
     cout << endl << endl;
+
     int contador = 1;
-    while (contador < 10){
+    while (contador <= 10){
         cout << tabu01 << " x " << contador << " = " << tabu01*contador<< endl;
         contador ++;
     }
