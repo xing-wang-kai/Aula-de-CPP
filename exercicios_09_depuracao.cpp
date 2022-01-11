@@ -6,6 +6,9 @@
 using namespace std;
 
 int main() {
+    cout << endl << "===============================================================" << endl;
+    cout << "============TESTE USANDO O DEBUGGER DE UM OPERAC===============" << endl;
+    cout << "===============================================================" << endl << endl;
 
     cout << "DIGITE UM VALOR ENTRE [1-3]: ";
     int valor;
