@@ -10,6 +10,12 @@
 #include <iomanip> // para formatação de strings para usar HEX E SETW
 #include <math.h> // para incluir a função pow()
 
+/**
+    cout << endl << "===============================================================" << endl;
+    cout << "============EXEMPLO DE TEXTO PARA USAR NOS EX===============" << endl;
+    cout << "===============================================================" << endl << endl;
+    **/
+
 using namespace std;
 
 float somar(float c, float d){
