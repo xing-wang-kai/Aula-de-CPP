@@ -5,23 +5,31 @@
 
 using namespace std;
 
+struct Pessoa {
+        string nome;
+        string cpf;
+        int idade;
+        double salario;
+    };
+
 int main() {
 
     cout << endl << "===============================================================" << endl;
-    cout << "============EXERCICIOS DE SOMAS DE LIN E COL DE ARRAY===============" << endl;
+    cout << "============DECLARANDO CLASS PARA COMPOR OBJ EM CPP===============" << endl;
     cout << "===============================================================" << endl << endl;
 
-    double warray[5][5]; // desta forma será gerado valores vázios para cadas célula da planilha.
+    Pessoa p1, p2;
+    p1.nome = "Joaquim";
+    p1.idade = 23;
+    p1.cpf = "222.222.222-45";
+    p1.salario = 2400.45;
 
-    for (int x = 0; x < 5; x++){
-        for (int y = 0; y < 5; x++){
+    p2.cpf = "023.555.555-55";
+    p2.nome = "maria";
+    p2.idade = 33;
+    p2.salario = 3000.54;
 
-            string totit = (y < 4) ? "|" : "\n";
-            warray[x][y] = (double) rand();
-            cout << setw(6) <<warray[x][y] << totit;
-        }
-
-    }
+    cout << "A PESSOA 01 EH = " <<p1.nome << endl<< "A PESSOA 02 EH = " << p2.nome;
 
     cout << endl << "===============================================================" << endl;
     cout << "========================FIM DO PROGRAMA========================" << endl;
@@ -29,8 +37,4 @@ int main() {
 
     system("pause");
     return 0;
-
-
 }
-
-
